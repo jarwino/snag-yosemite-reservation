@@ -9,3 +9,11 @@ python3 -m pip install -r requirements.txt
 ```sh
 python3 snag_yosemite_reservation.py --date="Monday, August 16, 2021"
 ```
+
+## Example
+```sh
+$ python3 snag_yosemite_reservation.py --date="Monday, August 16, 2021" 
+YES - reservations available :)
+$ python3 snag_yosemite_reservation.py --date="Monday, August 23, 2021"
+NO - reservations not available :(
+```
