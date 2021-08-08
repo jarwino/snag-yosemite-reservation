@@ -17,3 +17,9 @@ NO - reservations not available :(
 $ python3 snag_yosemite_reservation.py --date="Monday, August 23, 2021"
 YES - reservations available :)
 ```
+
+## Running as a server
+```sh
+python snag_yosemite_reservation.py --server
+```
+Runs on port http port 80

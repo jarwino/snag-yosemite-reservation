@@ -3,9 +3,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 
+from server import server_main
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--date")
+parser.add_argument("--server", action='store_true')
 args = parser.parse_args()
+if args.server is not None:
+    server_main()
+    exit(0)
 if args.date == None:
    parser.error('Specify date as --date=\"<Day of week>, <Month><Date>, <Year>\"')
 
